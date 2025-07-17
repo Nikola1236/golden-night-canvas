@@ -38,8 +38,8 @@ const About = () => {
                 Meet <span className="text-gradient">Laminar Trading</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                <strong className="text-gold">
-Jordan Fleming</strong> is a top-tier quantitative trader ranked #67 on the FTX leaderboard in 2022, with +48,193% return on personal capital since 2020. <strong className="text-gold">Jordan Fleming</strong> is a results-driven executive with global expertise across Dubai, London, Sydney, and more, bringing operational excellence and strategic growth to high-stakes environments.
+                <strong className="text-gold">Enio J</strong> is a top-tier quantitative trader ranked #67 on the FTX leaderboard in 2022, with +48,193% return on personal capital since 2020. <strong className="text-gold">
+Jordan F</strong> is a results-driven executive with global expertise across Dubai, London, Sydney, and more, bringing operational excellence and strategic growth to high-stakes environments.
               </p>
             </div>
 
@@ -67,12 +67,8 @@ Jordan Fleming</strong> is a top-tier quantitative trader ranked #67 on the FTX 
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-gold text-navy hover:bg-gold-light pulse-gold">
-                Schedule Consultation
-              </Button>
-              <Button variant="outline" size="lg" className="border-gold text-gold hover:bg-gold/10">
-                View Performance
-              </Button>
+              
+              
             </div>
           </div>
         </div>
