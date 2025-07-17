@@ -5,7 +5,7 @@ import TradingStrategies from "@/components/TradingStrategies";
 import Performance from "@/components/Performance";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
-import Contact from "@/components/Contact";
+import ContactSection from "@/components/ContactSection";
 import FreePDFSection from "@/components/FreePDFSection";
 import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
@@ -21,7 +21,7 @@ const Index = () => {
       <Testimonials />
       <FreePDFSection />
       <FAQ />
-      <Contact />
+      <ContactSection />
       <Footer />
       <Toaster />
     </div>
