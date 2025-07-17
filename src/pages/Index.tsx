@@ -6,6 +6,7 @@ import Performance from "@/components/Performance";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
+import FreePDFSection from "@/components/FreePDFSection";
 import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -18,6 +19,7 @@ const Index = () => {
       <TradingStrategies />
       <Performance />
       <Testimonials />
+      <FreePDFSection />
       <FAQ />
       <Contact />
       <Footer />

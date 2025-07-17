@@ -8,9 +8,16 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="p-2 rounded-lg bg-gold/10 border border-gold/20">
-                <TrendingUp className="h-6 w-6 text-gold" />
-              </div>
+              <img 
+                src="/lovable-uploads/7a50ed30-4135-4c09-a16d-9c9386d43e17.png" 
+                alt="TradeElite Logo" 
+                className="h-6 w-auto dark:hidden"
+              />
+              <img 
+                src="/lovable-uploads/ebb96ecd-ef8e-49f7-b357-bc0068bf0584.png" 
+                alt="TradeElite Logo" 
+                className="h-6 w-auto hidden dark:block"
+              />
               <span className="text-xl font-bold text-gradient">TradeElite</span>
             </div>
             <p className="text-muted-foreground text-sm">
