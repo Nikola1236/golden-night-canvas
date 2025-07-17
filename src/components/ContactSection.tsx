@@ -47,8 +47,11 @@ const ContactSection = () => {
 
     setIsSubmitting(true);
 
+    console.log('Form submitted with data:', formData);
+    
     try {
-      const { error } = await supabase.functions.invoke('discord-webhook', {
+      console.log('Calling discord-webhook function...');
+      const { data, error } = await supabase.functions.invoke('discord-webhook', {
         body: {
           fullName: formData.fullName,
           email: formData.email,
@@ -57,6 +60,8 @@ const ContactSection = () => {
           message: formData.message
         }
       });
+
+      console.log('Function response:', { data, error });
 
       if (error) throw error;
 
