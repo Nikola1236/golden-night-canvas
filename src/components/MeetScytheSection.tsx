@@ -6,66 +6,34 @@ const MeetScytheSection = () => {
     <section className="py-20 bg-cream">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          {/* Enhanced Profile Card */}
-            <div className="space-y-8">
-              {/* Enio J Card */}
-              <div className="glass-effect rounded-3xl p-8 shadow-[var(--shadow-glass)] hover-lift group border border-primary/20">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary via-primary/90 to-primary/80 rounded-full flex items-center justify-center relative overflow-hidden group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-2xl font-bold text-primary-foreground relative z-10">EJ</span>
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  <div>
-                    <h3 className="font-playfair text-xl font-bold text-night-blue group-hover:text-gradient transition-colors duration-300">Enio J</h3>
-                    <p className="text-night-blue/70">Founder / Trader</p>
-                  </div>
-                </div>
-                
-                <p className="text-night-blue/80 leading-relaxed mb-4">
-                  Enio J is a high-performance quantitative trader with a world-class track record in algorithmic strategy and capital growth. He is best known for his elite-level returns and technical precision in the crypto derivatives space. Ranked #67 globally on the FTX leaderboard in 2022, Enio has delivered a staggering +48,193% return on personal capital since 2020—an achievement that places him among the top-performing traders of his generation.
-                </p>
-                <p className="text-night-blue/80 leading-relaxed">
-                  With deep expertise in crypto derivatives, market structure, and execution systems, Enio brings a rare combination of vision and discipline. His strategic direction and quantitative edge form the core of Laminar Trading&apos;s competitive advantage.
-                </p>
-                
-                <div className="grid grid-cols-2 gap-4 mt-6">
-                  <div className="text-center p-4 glass-effect rounded-xl hover-lift group">
-                    <div className="text-2xl font-bold text-green-500 mb-1 number-counter group-hover:animate-pulse-glow">#67</div>
-                    <div className="text-night-blue/60 text-sm">FTX Rank 2022</div>
-                  </div>
-                  <div className="text-center p-4 glass-effect rounded-xl hover-lift group">
-                    <div className="text-2xl font-bold text-gold mb-1 number-counter group-hover:animate-pulse-glow">+48,193%</div>
-                    <div className="text-night-blue/60 text-sm">Personal Return</div>
+          {/* Team Photo */}
+          <div className="relative">
+            <div className="glass-effect rounded-3xl p-8 shadow-[var(--shadow-glass)] hover-lift group border border-primary/20">
+              <img
+                src="/lovable-uploads/b054cbc5-bba5-4de3-b244-c9e4b9a52ab2.png"
+                alt="Enio J and Jordan F - Laminar Trading Team"
+                className="w-full h-auto rounded-2xl shadow-lg group-hover:scale-[1.02] transition-transform duration-300"
+              />
+              <div className="mt-6 grid grid-cols-2 gap-4">
+                <div className="text-center p-4 glass-effect rounded-xl hover-lift">
+                  <h4 className="font-playfair text-lg font-bold text-night-blue mb-1">Enio J</h4>
+                  <p className="text-night-blue/70 text-sm">Founder / Trader</p>
+                  <div className="mt-2">
+                    <div className="text-sm font-bold text-green-500">#67 FTX Rank</div>
+                    <div className="text-sm font-bold text-gold">+48,193% Return</div>
                   </div>
                 </div>
-              </div>
-
-              {/* Jordan F Card */}
-              <div className="glass-effect rounded-3xl p-8 shadow-[var(--shadow-glass)] hover-lift group border border-primary/20">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary via-primary/90 to-primary/80 rounded-full flex items-center justify-center relative overflow-hidden group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-2xl font-bold text-primary-foreground relative z-10">JF</span>
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="text-center p-4 glass-effect rounded-xl hover-lift">
+                  <h4 className="font-playfair text-lg font-bold text-night-blue mb-1">Jordan F</h4>
+                  <p className="text-night-blue/70 text-sm">COO</p>
+                  <div className="mt-2">
+                    <div className="text-sm font-bold text-primary">Global Executive</div>
+                    <div className="text-night-blue/60 text-xs">Dubai • London • Sydney</div>
                   </div>
-                  <div>
-                    <h3 className="font-playfair text-xl font-bold text-night-blue group-hover:text-gradient transition-colors duration-300">Jordan F</h3>
-                    <p className="text-night-blue/70">COO</p>
-                  </div>
-                </div>
-                
-                <p className="text-night-blue/80 leading-relaxed mb-4">
-                  Jordan Fleming is a results-driven executive with a global perspective and a proven track record in leadership, operations, and strategic growth. Leveraging experience across major financial hubs and diverse markets—including Dubai, London, Sydney, and more—Jordan brings a unique blend of operational excellence, cultural intelligence, and high-level networking to the table.
-                </p>
-                <p className="text-night-blue/80 leading-relaxed">
-                  He is adept at managing cross-functional teams, optimizing business processes, and delivering top-tier results in fast-paced, high-stakes environments.
-                </p>
-                
-                <div className="text-center p-4 glass-effect rounded-xl hover-lift mt-6">
-                  <div className="text-lg font-bold text-primary mb-1">Global Executive</div>
-                  <div className="text-night-blue/60 text-sm">Dubai • London • Sydney</div>
                 </div>
               </div>
             </div>
+          </div>
           
           {/* Enhanced Content */}
           <div className="space-y-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>

@@ -12,9 +12,9 @@ interface ContactMessage {
   full_name: string;
   email: string;
   phone: string | null;
-  subject: string | null;
   message: string;
   created_at: string;
+  updated_at: string;
 }
 
 const Admin = () => {
@@ -58,17 +58,6 @@ const Admin = () => {
     });
   };
 
-  const getSubjectColor = (subject: string | null) => {
-    if (!subject) return "secondary";
-    switch (subject) {
-      case 'General Information': return "default";
-      case 'Strategy Demo': return "destructive";
-      case 'Investment Consultation': return "secondary";
-      case 'Technical Support': return "outline";
-      case 'Partnership': return "default";
-      default: return "secondary";
-    }
-  };
 
   if (loading) {
     return (
@@ -158,11 +147,6 @@ const Admin = () => {
                               )}
                             </div>
 
-                            {message.subject && (
-                              <Badge variant={getSubjectColor(message.subject)} className="w-fit">
-                                {message.subject}
-                              </Badge>
-                            )}
 
                             <div className="bg-muted/30 rounded-lg p-4">
                               <p className="text-sm leading-relaxed whitespace-pre-wrap">

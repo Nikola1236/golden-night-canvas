@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Mountain Background */}
       <div className="absolute inset-0">
         <img
-          src="/lovable-uploads/0ec2e87e-faa9-4e5e-9a75-c1eb470984e2.png"
+          src="/lovable-uploads/90a22d68-854f-4f93-9844-715a76d88f54.png"
           alt="Mountain landscape"
           className="w-full h-full object-cover opacity-30 dark:opacity-20"
         />
