@@ -7,18 +7,16 @@ const About = () => {
           {/* Left: Image */}
           <div className="relative">
             <div className="glass-card p-8 rounded-2xl">
-              <div className="aspect-square rounded-xl bg-gradient-to-br from-gold/20 to-primary/20 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-24 h-24 rounded-full bg-gold/10 border-2 border-gold/20 flex items-center justify-center mx-auto">
-                    <Award className="h-12 w-12 text-gold" />
-                  </div>
-                  <div className="text-sm text-muted-foreground">Enio J</div>
-                  <div className="text-xs text-muted-foreground">Founder / Trader</div>
-                </div>
+              <div className="aspect-square rounded-xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/e0155dab-f487-4f23-8eb3-3ade80de9af4.png" 
+                  alt="Enio J and Jordan F" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
-            {/* Floating Stats */}
+            {/* Floating Stats - Enio J */}
             <div className="absolute -top-4 -right-4 glass-card p-4 rounded-xl animate-float">
               <div className="text-xl font-bold text-profit">#67</div>
               <div className="text-xs text-muted-foreground">FTX Rank</div>
@@ -28,6 +26,20 @@ const About = () => {
           }}>
               <div className="text-xl font-bold text-gold">+48,193%</div>
               <div className="text-xs text-muted-foreground">Personal Return</div>
+            </div>
+            
+            {/* Floating Stats - Jordan F */}
+            <div className="absolute top-1/4 -left-8 glass-card p-4 rounded-xl animate-float" style={{
+            animationDelay: '2s'
+          }}>
+              <div className="text-xl font-bold text-primary">Dubai</div>
+              <div className="text-xs text-muted-foreground">Global Operations</div>
+            </div>
+            <div className="absolute bottom-1/4 -right-8 glass-card p-4 rounded-xl animate-float" style={{
+            animationDelay: '3s'
+          }}>
+              <div className="text-xl font-bold text-gold">Executive</div>
+              <div className="text-xs text-muted-foreground">Strategic Growth</div>
             </div>
           </div>
 
