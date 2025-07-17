@@ -50,8 +50,8 @@ const About = () => {
                 Meet <span className="text-gradient">Laminar Trading</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                <strong className="text-gold">Enio J</strong> is a top-tier quantitative trader ranked #67 on the FTX leaderboard in 2022, with +48,193% return on personal capital since 2020. <strong className="text-gold">
-Jordan F</strong> is a results-driven executive with global expertise across Dubai, London, Sydney, and more, bringing operational excellence and strategic growth to high-stakes environments.
+                <strong className="text-gold">Enio J</strong> is a top-tier quantitative trader ranked #67 on the FTX leaderboard in 2022, with +48,193% return on personal capital since 2020. <br /><br />
+                <strong className="text-gold">Jordan F</strong> is a results-driven executive with global expertise across Dubai, London, Sydney, and more, bringing operational excellence and strategic growth to high-stakes environments.
               </p>
             </div>
 
