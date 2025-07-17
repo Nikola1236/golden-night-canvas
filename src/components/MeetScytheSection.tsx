@@ -21,7 +21,14 @@ const MeetScytheSection = () => {
                   </div>
                 </div>
                 
-                <div className="grid grid-cols-2 gap-4">
+                <p className="text-night-blue/80 leading-relaxed mb-4">
+                  Enio J is a high-performance quantitative trader with a world-class track record in algorithmic strategy and capital growth. He is best known for his elite-level returns and technical precision in the crypto derivatives space. Ranked #67 globally on the FTX leaderboard in 2022, Enio has delivered a staggering +48,193% return on personal capital since 2020—an achievement that places him among the top-performing traders of his generation.
+                </p>
+                <p className="text-night-blue/80 leading-relaxed">
+                  With deep expertise in crypto derivatives, market structure, and execution systems, Enio brings a rare combination of vision and discipline. His strategic direction and quantitative edge form the core of Laminar Trading&apos;s competitive advantage.
+                </p>
+                
+                <div className="grid grid-cols-2 gap-4 mt-6">
                   <div className="text-center p-4 glass-effect rounded-xl hover-lift group">
                     <div className="text-2xl font-bold text-green-500 mb-1 number-counter group-hover:animate-pulse-glow">#67</div>
                     <div className="text-night-blue/60 text-sm">FTX Rank 2022</div>
@@ -46,7 +53,14 @@ const MeetScytheSection = () => {
                   </div>
                 </div>
                 
-                <div className="text-center p-4 glass-effect rounded-xl hover-lift">
+                <p className="text-night-blue/80 leading-relaxed mb-4">
+                  Jordan Fleming is a results-driven executive with a global perspective and a proven track record in leadership, operations, and strategic growth. Leveraging experience across major financial hubs and diverse markets—including Dubai, London, Sydney, and more—Jordan brings a unique blend of operational excellence, cultural intelligence, and high-level networking to the table.
+                </p>
+                <p className="text-night-blue/80 leading-relaxed">
+                  He is adept at managing cross-functional teams, optimizing business processes, and delivering top-tier results in fast-paced, high-stakes environments.
+                </p>
+                
+                <div className="text-center p-4 glass-effect rounded-xl hover-lift mt-6">
                   <div className="text-lg font-bold text-primary mb-1">Global Executive</div>
                   <div className="text-night-blue/60 text-sm">Dubai • London • Sydney</div>
                 </div>
