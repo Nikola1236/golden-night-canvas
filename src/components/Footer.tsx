@@ -61,10 +61,34 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gold/10 mt-8 pt-8 text-center">
-          <p className="text-muted-foreground text-sm">
-            © 2024 TradeElite. All rights reserved. Educational trading course.
-          </p>
+        {/* Risk Disclosure */}
+        <div className="border-t border-gold/10 mt-8 pt-8">
+          <div className="mb-6">
+            <h4 className="font-semibold text-gold mb-3">Risk Disclosure:</h4>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Cryptocurrency trading involves substantial risk and may result in the loss of your entire investment. Past performance does not guarantee future results. Only invest what you can afford to lose and always consult an independent financial advisor before making investment decisions. TradeElite is a professional trading course for educational purposes only.
+            </p>
+          </div>
+          
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-muted-foreground text-sm">
+              © 2024 TradeElite. All rights reserved.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+              <a href="#" className="text-muted-foreground hover:text-gold transition-colors text-sm">
+                Privacy Policy
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-gold transition-colors text-sm">
+                Terms of Service
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-gold transition-colors text-sm">
+                Risk Disclosure
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-gold transition-colors text-sm">
+                Compliance
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
