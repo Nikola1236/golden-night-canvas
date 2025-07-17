@@ -4,38 +4,38 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const strategies = [
   {
     icon: Bot,
-    title: "Algoritmi Avanzati",
-    description: "IA e machine learning per identificare pattern nascosti nei mercati con precisione millimetrica",
+    title: "Advanced Algorithms",
+    description: "AI and machine learning to identify hidden patterns in markets with millimetric precision",
     features: ["Deep Learning", "Pattern Recognition", "Real-time Analysis"]
   },
   {
     icon: Brain,
     title: "Sentiment Analysis",
-    description: "Analisi del sentiment di mercato attraverso news, social media e flussi di capitale istituzionali",
+    description: "Market sentiment analysis through news, social media and institutional capital flows",
     features: ["News Analysis", "Social Sentiment", "Flow Detection"]
   },
   {
     icon: Target,
     title: "Risk Management",
-    description: "Sistemi di gestione del rischio multi-livello per proteggere il capitale in ogni condizione",
-    features: ["Stop Loss Dinamici", "Position Sizing", "Correlazione Asset"]
+    description: "Multi-level risk management systems to protect capital in every market condition",
+    features: ["Dynamic Stop Loss", "Position Sizing", "Asset Correlation"]
   },
   {
     icon: Zap,
     title: "Execution Speed",
-    description: "Esecuzione ultra-veloce degli ordini con latenza sub-millisecondo sui principali exchange",
+    description: "Ultra-fast order execution with sub-millisecond latency on major exchanges",
     features: ["Low Latency", "Smart Routing", "Slippage Control"]
   },
   {
     icon: TrendingUp,
     title: "Multi-Timeframe",
-    description: "Strategie che operano su diversi timeframe simultaneamente per massimizzare le opportunità",
+    description: "Strategies operating across multiple timeframes simultaneously to maximize opportunities",
     features: ["Scalping", "Swing Trading", "Position Trading"]
   },
   {
     icon: Shield,
     title: "Portfolio Protection",
-    description: "Hedge dinamici e diversificazione intelligente per proteggere il portafoglio dalle volatilità",
+    description: "Dynamic hedging and intelligent diversification to protect portfolio from volatility",
     features: ["Dynamic Hedging", "Correlation Filtering", "Volatility Adjustment"]
   }
 ];
@@ -68,7 +68,7 @@ const TradingStrategies = () => {
                       <IconComponent className="h-6 w-6 text-gold" />
                     </div>
                     <div className="text-xs px-2 py-1 rounded-full bg-profit/10 text-profit border border-profit/20">
-                      ATTIVO
+                      ACTIVE
                     </div>
                   </div>
                   <CardTitle className="text-xl text-gold group-hover:text-gold-light transition-colors">
@@ -95,23 +95,23 @@ const TradingStrategies = () => {
 
         {/* Performance Section */}
         <div className="mt-20 glass-card p-8 rounded-2xl text-center">
-          <h3 className="text-2xl font-bold text-gradient mb-6">Performance in Tempo Reale</h3>
+          <h3 className="text-2xl font-bold text-gradient mb-6">Real-Time Performance</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div>
               <div className="text-2xl font-bold text-profit mb-1">+12.7%</div>
-              <div className="text-xs text-muted-foreground">Oggi</div>
+              <div className="text-xs text-muted-foreground">Today</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-profit mb-1">+84.3%</div>
-              <div className="text-xs text-muted-foreground">Questo Mese</div>
+              <div className="text-xs text-muted-foreground">This Month</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-gold mb-1">94.2%</div>
-              <div className="text-xs text-muted-foreground">Accuratezza</div>
+              <div className="text-xs text-muted-foreground">Accuracy</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-foreground mb-1">1,247</div>
-              <div className="text-xs text-muted-foreground">Trade Oggi</div>
+              <div className="text-xs text-muted-foreground">Trades Today</div>
             </div>
           </div>
         </div>
