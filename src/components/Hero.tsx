@@ -64,21 +64,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          {/* CTA Button */}
+          <div className="flex justify-center">
             <Button
               size="lg"
               className="bg-gold text-navy hover:bg-gold-light text-lg px-8 py-4 pulse-gold"
             >
-              Access Strategies
+              Access Course
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-gold text-gold hover:bg-gold/10 text-lg px-8 py-4"
-            >
-              Free Demo
             </Button>
           </div>
 

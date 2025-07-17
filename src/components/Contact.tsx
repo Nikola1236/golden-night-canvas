@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Send, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -62,27 +62,27 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">Email</div>
-                    <div className="text-muted-foreground">contact@scythecapital.com</div>
+                    <div className="text-muted-foreground">contact@tradingcourse.com</div>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4">
                   <div className="p-3 rounded-lg bg-gold/10 border border-gold/20">
-                    <Phone className="h-6 w-6 text-gold" />
+                    <MessageSquare className="h-6 w-6 text-gold" />
                   </div>
                   <div>
-                    <div className="font-semibold text-foreground">Phone</div>
-                    <div className="text-muted-foreground">+971 4 123 4567</div>
+                    <div className="font-semibold text-foreground">Discord</div>
+                    <div className="text-muted-foreground">discord.gg/tradingcourse</div>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4">
                   <div className="p-3 rounded-lg bg-gold/10 border border-gold/20">
-                    <MapPin className="h-6 w-6 text-gold" />
+                    <MessageSquare className="h-6 w-6 text-gold" />
                   </div>
                   <div>
-                    <div className="font-semibold text-foreground">Headquarters</div>
-                    <div className="text-muted-foreground">Dubai, UAE</div>
+                    <div className="font-semibold text-foreground">Telegram</div>
+                    <div className="text-muted-foreground">@tradingcourse</div>
                   </div>
                 </div>
               </div>
