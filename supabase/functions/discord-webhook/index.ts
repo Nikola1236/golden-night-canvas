@@ -52,7 +52,6 @@ const handler = async (req: Request): Promise<Response> => {
         full_name: fullName,
         email: email,
         phone: phone || null,
-        subject: null,
         message: message
       }]);
 
