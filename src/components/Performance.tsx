@@ -115,6 +115,7 @@ const Performance = () => {
             <Button
               size="lg"
               className="bg-gold text-navy hover:bg-gold-light pulse-gold"
+              onClick={() => window.open('https://discord.gg/MMhJcaH8', '_blank')}
             >
               Access Our Strategies
             </Button>

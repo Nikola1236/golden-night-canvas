@@ -80,7 +80,12 @@ const PerformanceSection = () => {
           </div>
           
           <div className="text-center mt-12 animate-scale-in" style={{ animationDelay: '0.8s' }}>
-            <Button variant="default" size="lg" className="hover-lift relative overflow-hidden group">
+            <Button 
+              variant="default" 
+              size="lg" 
+              className="hover-lift relative overflow-hidden group"
+              onClick={() => window.open('https://discord.gg/MMhJcaH8', '_blank')}
+            >
               <span className="relative z-10">Access Our Strategies</span>
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Button>
