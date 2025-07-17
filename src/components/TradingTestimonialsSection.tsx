@@ -40,8 +40,8 @@ const TradingTestimonialsSection = () => {
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <div className="text-center mb-16 animate-slide-up">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-6 text-gradient">
             Trusted by Market Leaders
           </h2>
           <p className="font-inter text-xl text-foreground/70 max-w-3xl mx-auto">
@@ -49,26 +49,29 @@ const TradingTestimonialsSection = () => {
           </p>
         </div>
         
-        {/* Testimonials Grid */}
+        {/* Enhanced Testimonials Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-card border border-primary/20 rounded-2xl p-8 hover:border-primary/40 transition-all duration-300">
-              <blockquote className="text-card-foreground/80 text-lg leading-relaxed mb-6">
-                "{testimonial.quote}"
+            <div key={index} className="glass-effect rounded-2xl p-8 hover:border-primary/40 transition-all duration-500 hover-lift group gradient-border animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <blockquote className="text-card-foreground/80 text-lg leading-relaxed mb-6 group-hover:text-card-foreground transition-colors duration-300 relative">
+                <span className="text-primary text-4xl absolute -top-2 -left-2 opacity-20">"</span>
+                <span className="relative z-10">{testimonial.quote}</span>
+                <span className="text-primary text-4xl absolute -bottom-6 -right-2 opacity-20 rotate-180">"</span>
               </blockquote>
               
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                  <span className="text-primary-foreground font-semibold text-sm">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center relative overflow-hidden group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-primary-foreground font-semibold text-sm relative z-10">
                     {testimonial.initials}
                   </span>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div>
-                  <div className="font-semibold text-card-foreground">{testimonial.name}</div>
-                  <div className="text-card-foreground/60 text-sm">
+                  <div className="font-semibold text-card-foreground group-hover:text-gradient transition-colors duration-300">{testimonial.name}</div>
+                  <div className="text-card-foreground/60 text-sm group-hover:text-card-foreground/80 transition-colors duration-300">
                     {testimonial.role}
                   </div>
-                  <div className="text-card-foreground/60 text-sm">
+                  <div className="text-card-foreground/60 text-sm group-hover:text-primary transition-colors duration-300">
                     {testimonial.company}
                   </div>
                 </div>
@@ -77,12 +80,12 @@ const TradingTestimonialsSection = () => {
           ))}
         </div>
         
-        {/* Stats */}
+        {/* Enhanced Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
-              <div className="text-foreground/60">{stat.label}</div>
+            <div key={index} className="text-center group animate-scale-in" style={{ animationDelay: `${0.6 + index * 0.1}s` }}>
+              <div className="text-4xl font-bold text-primary mb-2 number-counter group-hover:animate-pulse-glow group-hover:scale-110 transition-transform duration-300">{stat.number}</div>
+              <div className="text-foreground/60 group-hover:text-foreground/80 transition-colors duration-300">{stat.label}</div>
             </div>
           ))}
         </div>

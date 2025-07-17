@@ -55,6 +55,25 @@ All colors MUST be HSL.
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-elastic: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Advanced Gradients */
+    --gradient-mesh: radial-gradient(at 40% 20%, hsl(45 69% 52% / 0.3) 0px, transparent 50%),
+                     radial-gradient(at 80% 0%, hsl(210 64% 14% / 0.4) 0px, transparent 50%),
+                     radial-gradient(at 0% 50%, hsl(45 69% 52% / 0.2) 0px, transparent 50%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    --gradient-border: linear-gradient(135deg, hsl(45 69% 52% / 0.3), transparent, hsl(45 69% 52% / 0.3));
+    
+    /* Enhanced Shadows */
+    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    --shadow-glow-primary: 0 0 60px hsl(45 69% 52% / 0.4);
+    --shadow-floating: 0 20px 40px -10px hsl(210 64% 14% / 0.3);
+    --shadow-inset: inset 0 2px 4px 0 rgba(255, 255, 255, 0.1);
+    
+    /* Backdrop filters */
+    --blur-glass: blur(16px);
+    --blur-heavy: blur(24px);
 
     --sidebar-background: 0 0% 98%;
 
@@ -119,5 +138,114 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    scroll-behavior: smooth;
   }
+  
+  /* Custom Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  .glass-effect {
+    background: var(--gradient-glass);
+    backdrop-filter: var(--blur-glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .gradient-border {
+    position: relative;
+  }
+  
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    background: var(--gradient-border);
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(45 69% 52%), hsl(45 69% 70%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hover-lift {
+    transition: var(--transition-spring);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-floating);
+  }
+  
+  .number-counter {
+    font-variant-numeric: tabular-nums;
+  }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-10px) rotate(1deg); }
+  66% { transform: translateY(5px) rotate(-1deg); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px hsl(45 69% 52% / 0.3); }
+  to { box-shadow: 0 0 40px hsl(45 69% 52% / 0.6), 0 0 60px hsl(45 69% 52% / 0.3); }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.shimmer-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: shimmer 2s infinite;
+}
 }

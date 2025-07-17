@@ -44,8 +44,8 @@ const FAQSection = () => {
   return (
     <section className="py-20 bg-cream" id="faq">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-night-blue mb-6">
+        <div className="text-center mb-16 animate-slide-up">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-night-blue mb-6 text-gradient">
             Frequently Asked Questions
           </h2>
           <p className="font-inter text-xl text-night-blue/70">
@@ -53,18 +53,21 @@ const FAQSection = () => {
           </p>
         </div>
         
-        <div className="bg-background rounded-3xl p-8 shadow-[var(--shadow-card)]">
+        <div className="glass-effect rounded-3xl p-8 shadow-[var(--shadow-glass)] gradient-border animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="border border-primary/20 rounded-xl px-6 data-[state=open]:bg-primary/5"
+                className="glass-effect rounded-xl px-6 data-[state=open]:bg-primary/5 hover-lift transition-all duration-300 border border-primary/20 data-[state=open]:border-primary/40 group"
               >
-                <AccordionTrigger className="text-left font-semibold text-night-blue hover:text-primary transition-colors">
-                  {faq.question}
+                <AccordionTrigger className="text-left font-semibold text-night-blue hover:text-primary transition-colors duration-300 group-hover:scale-[1.02]">
+                  <span className="flex items-center gap-3">
+                    <span className="w-2 h-2 bg-primary rounded-full animate-pulse-glow"></span>
+                    {faq.question}
+                  </span>
                 </AccordionTrigger>
-                <AccordionContent className="text-night-blue/70 leading-relaxed pt-2">
+                <AccordionContent className="text-night-blue/70 leading-relaxed pt-2 animate-slide-up">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -72,13 +75,14 @@ const FAQSection = () => {
           </Accordion>
         </div>
         
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 animate-scale-in" style={{ animationDelay: '0.4s' }}>
           <p className="text-night-blue/60 mb-4">Can't find the answer you're looking for?</p>
           <a 
             href="#contact" 
-            className="text-primary hover:text-primary/80 font-semibold transition-colors"
+            className="text-primary hover:text-primary/80 font-semibold transition-all duration-300 relative group"
           >
-            Contact us directly →
+            <span className="relative z-10">Contact us directly →</span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-primary/80 transition-all duration-300 group-hover:w-full"></span>
           </a>
         </div>
       </div>
