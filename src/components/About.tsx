@@ -14,20 +14,20 @@ const About = () => {
                   <div className="w-24 h-24 rounded-full bg-gold/10 border-2 border-gold/20 flex items-center justify-center mx-auto">
                     <Award className="h-12 w-12 text-gold" />
                   </div>
-                  <div className="text-sm text-muted-foreground">Jordan Fleming</div>
-                  <div className="text-xs text-muted-foreground">CEO & Lead Trader</div>
+                  <div className="text-sm text-muted-foreground">Enio J</div>
+                  <div className="text-xs text-muted-foreground">Founder / Trader</div>
                 </div>
               </div>
             </div>
 
             {/* Floating Stats */}
             <div className="absolute -top-4 -right-4 glass-card p-4 rounded-xl animate-float">
-              <div className="text-xl font-bold text-profit">+813%</div>
-              <div className="text-xs text-muted-foreground">2021 Return</div>
+              <div className="text-xl font-bold text-profit">#67</div>
+              <div className="text-xs text-muted-foreground">FTX Rank</div>
             </div>
             <div className="absolute -bottom-4 -left-4 glass-card p-4 rounded-xl animate-float" style={{ animationDelay: '1s' }}>
-              <div className="text-xl font-bold text-gold">-6.8%</div>
-              <div className="text-xs text-muted-foreground">2022 Drawdown</div>
+              <div className="text-xl font-bold text-gold">+48,193%</div>
+              <div className="text-xs text-muted-foreground">Personal Return</div>
             </div>
           </div>
 
@@ -35,10 +35,10 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Meet <span className="text-gradient">Scythe Capital</span>
+                Meet <span className="text-gradient">Laminar Trading</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Founded by <strong className="text-gold">Jordan Fleming</strong>, a results-driven executive with global expertise across Dubai, London, and Sydney. Scythe Capital combines operational excellence with advanced trading infrastructure to deliver sustainable alpha in cryptocurrency markets.
+                <strong className="text-gold">Enio J</strong> is a top-tier quantitative trader ranked #67 on the FTX leaderboard in 2022, with +48,193% return on personal capital since 2020. <strong className="text-gold">Jordan Fleming</strong> is a results-driven executive with global expertise across Dubai, London, Sydney, and more, bringing operational excellence and strategic growth to high-stakes environments.
               </p>
             </div>
 
@@ -58,10 +58,10 @@ const About = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-gold">Our Edge</h3>
               <p className="text-muted-foreground">
-                What sets Scythe Capital apart is our <strong>adaptive trading framework</strong> that thrives in any market condition. While 2021's +813% return showcased our ability to capitalize on bull markets, our -6.8% drawdown during 2022's crypto collapse—when Bitcoin fell 64%—demonstrates our superior capital preservation.
+                What sets Laminar Trading apart is our <strong>adaptive trading framework</strong> with deep specialization in crypto derivatives, market structure, and execution systems. Enio's leadership and strategy form the foundation of our edge, while Jordan's operational excellence optimizes business processes in fast-paced environments.
               </p>
               <p className="text-muted-foreground">
-                This resilience enabled our strong 2023 rebound (+163%), proving our multi-layered strategy works across complete market cycles.
+                Our proprietary low-latency trading terminal and priority access to premium exchange data feeds provide institutional-level advantages that translate directly into superior performance.
               </p>
             </div>
 
