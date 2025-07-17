@@ -106,9 +106,10 @@ const FreePDFSection = () => {
                 </div>
                 
                 <Button 
-                  type="submit" 
+                  type="button" 
                   size="lg" 
                   className="w-full bg-gold text-navy hover:bg-gold-light pulse-gold"
+                  onClick={() => window.open('https://whop.com/laminar-trading/', '_blank')}
                 >
                   <Download className="mr-2 h-5 w-5" />
                   Download Free Guide
