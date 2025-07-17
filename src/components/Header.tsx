@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Menu, X, TrendingUp } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Menu, X, TrendingUp, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -42,6 +43,9 @@ const Header = () => {
           {/* Theme Toggle & CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
+            <Link to="/admin" className="text-foreground/60 hover:text-primary transition-colors">
+              <Settings className="h-5 w-5" />
+            </Link>
             <Button className="bg-gold text-navy hover:bg-gold-light pulse-gold">
               Get Started
             </Button>
