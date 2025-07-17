@@ -48,15 +48,15 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase
-        .from('contact_messages')
-        .insert([{
-          full_name: formData.fullName,
+      const { error } = await supabase.functions.invoke('discord-webhook', {
+        body: {
+          fullName: formData.fullName,
           email: formData.email,
           phone: formData.phone,
           subject: formData.subject,
           message: formData.message
-        }]);
+        }
+      });
 
       if (error) throw error;
 
