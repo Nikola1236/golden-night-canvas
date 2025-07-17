@@ -7,18 +7,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <img 
-                src="/lovable-uploads/7a50ed30-4135-4c09-a16d-9c9386d43e17.png" 
-                alt="TradeElite Logo" 
-                className="h-6 w-auto dark:hidden"
-              />
+            <div className="flex items-center space-x-3">
               <img 
                 src="/lovable-uploads/ebb96ecd-ef8e-49f7-b357-bc0068bf0584.png" 
-                alt="TradeElite Logo" 
-                className="h-6 w-auto hidden dark:block"
+                alt="Laminar Trading Logo" 
+                className="h-8 w-auto"
               />
-              <span className="text-xl font-bold text-gradient">TradeElite</span>
+              <span className="text-xl font-bold text-gradient">Laminar Trading</span>
             </div>
             <p className="text-muted-foreground text-sm">
               Master professional trading strategies with our comprehensive course. 
@@ -73,13 +68,13 @@ const Footer = () => {
           <div className="mb-6">
             <h4 className="font-semibold text-gold mb-3">Risk Disclosure:</h4>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Cryptocurrency trading involves substantial risk and may result in the loss of your entire investment. Past performance does not guarantee future results. Only invest what you can afford to lose and always consult an independent financial advisor before making investment decisions. TradeElite is a professional trading course for educational purposes only.
+              Cryptocurrency trading involves substantial risk and may result in the loss of your entire investment. Past performance does not guarantee future results. Only invest what you can afford to lose and always consult an independent financial advisor before making investment decisions. Laminar Trading is a professional trading course for educational purposes only.
             </p>
           </div>
           
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-sm">
-              © 2024 TradeElite. All rights reserved.
+              © 2024 Laminar Trading. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <a href="#" className="text-muted-foreground hover:text-gold transition-colors text-sm">

@@ -7,36 +7,20 @@ import {
 
 const faqs = [
   {
-    question: "What's the minimum capital required to start?",
-    answer: "We recommend a minimum capital of $25,000 for optimal results. However, it's possible to start with $10,000 to test strategies in conservative mode. Our system automatically adapts to your available budget."
+    question: "What is the investment strategy and edge?",
+    answer: "Scythe's edge lies in a diverse, adaptive trading framework: Intraday Trading exploits short-term price movements for frequent, nimble gains. Swing Trading captures medium-term trends over several days or weeks. Options Trading adds convexity to the portfolio through volatility-driven setups and strategic hedging. Delta-Neutral Strategies are designed to reduce directional exposure and monetize market inefficiencies using a mix of spot, futures, and options. This multi-layered strategy stack allows Scythe to generate returns in both bullish and bearish markets. Our operational advantage comes from a proprietary low-latency trading terminal built for advanced discretionary trading, priority access to premium exchange data feeds not available to most market participants, and five years of refinement in order flow analytics and derivatives modeling, enabling smarter trade positioning and superior edge retention."
   },
   {
-    question: "Do the strategies work across all markets?",
-    answer: "Yes, our strategies are designed to operate on Crypto, Forex, Indices, Commodities, and Stocks. Each algorithm automatically adapts to the specific characteristics of every market and timeframe."
+    question: "What are the fund's historical performance and risk metrics?",
+    answer: "Since inception, Scythe Capital has delivered a cumulative return of +35,660.7%, compared to +1,337.5% for Bitcoin over the same period. Annual returns: 2020: +230%, 2021: +813%, 2022: -6.8% (managed losses during market-wide collapse), 2023: +163%, 2024: +124%, 2025 YTD: +155%. Key fund metrics (2020–2025 YTD): Sharpe Ratio: 1.66 (superior to industry standard of 1.0), Sortino Ratio: 8.82 (exceptional downside protection), Calmar Ratio: 2.03 (excellent vs drawdown), Alpha: 2.66 (significant alpha vs BTC), Beta: 0.37 (low correlation to BTC volatility). Past performance doesn't guarantee future returns."
   },
   {
-    question: "How much time do I need to dedicate daily?",
-    answer: "The system is fully automated. Once configured, it requires only 5-10 minutes daily for monitoring. You'll receive real-time notifications for the most important operations."
+    question: "Who are the key team members and what is their track record?",
+    answer: "Founder/Trader: Enio J is a top-tier quantitative trader with a performance track record few in the industry can match. Ranked #67 on the FTX leaderboard in 2022, delivered +48,193% return on personal capital since 2020, with deep specialization in crypto derivatives, market structure, and execution. His leadership and strategy form the foundation of Scythe Capital's edge. COO: Jordan F (TBA)."
   },
   {
-    question: "How is risk managed?",
-    answer: "We use a multi-level risk management system with dynamic stop losses, automatic position sizing, and correlation control. Maximum risk per trade is limited to 2% of capital."
-  },
-  {
-    question: "Can I use the system with multiple brokers?",
-    answer: "Absolutely. Our system is compatible with 50+ brokers including MetaTrader 4/5, cTrader, TradingView, and major crypto platforms. Setup takes just minutes."
-  },
-  {
-    question: "What type of support do you offer?",
-    answer: "We offer 24/7 support via chat, email, and phone. Plus, you get access to weekly webinars, a private trader community, and personalized coaching sessions."
-  },
-  {
-    question: "Are there any performance guarantees?",
-    answer: "We offer a full 30-day money-back guarantee if you're not satisfied. Past results don't guarantee future performance, but our transparency on historical results lets you evaluate independently."
-  },
-  {
-    question: "Is trading experience necessary?",
-    answer: "No, the system is designed for both beginners and experts. We provide complete training and the software includes educational mode with detailed explanations of every trading decision."
+    question: "What are the terms and fees?",
+    answer: "Minimum investment: $100,000 (crypto accepted). Fees: 2% management + 20% performance. Liquidity: Quarterly withdrawals, 1-year lock-up. Current AUM: $68 million and growing. Investor access: By invitation, via Telegram @enio10k. Scythe maintains a selective capital base to ensure strategic alignment with long-term goals."
   }
 ];
 

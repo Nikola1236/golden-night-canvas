@@ -11,18 +11,13 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <img 
-              src="/lovable-uploads/7a50ed30-4135-4c09-a16d-9c9386d43e17.png" 
-              alt="TradeElite Logo" 
-              className="h-8 w-auto dark:hidden"
-            />
+          <div className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/ebb96ecd-ef8e-49f7-b357-bc0068bf0584.png" 
-              alt="TradeElite Logo" 
-              className="h-8 w-auto hidden dark:block"
+              alt="Laminar Trading Logo" 
+              className="h-10 w-auto"
             />
-            <span className="text-xl font-bold text-gradient">TradeElite</span>
+            <span className="text-xl font-bold text-gradient">Laminar Trading</span>
           </div>
 
           {/* Desktop Navigation */}
