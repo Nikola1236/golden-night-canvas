@@ -96,8 +96,8 @@ const ContactSection = () => {
         
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Enhanced Contact Info */}
-          <div className="space-y-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <h3 className="font-playfair text-2xl font-bold text-foreground mb-8 text-gradient">
+          <div className="glass-effect rounded-3xl p-8 gradient-border animate-scale-in" style={{ animationDelay: '0.2s' }}>
+            <h3 className="font-playfair text-2xl font-bold text-gold mb-8">
               Contact Us Now
             </h3>
             
