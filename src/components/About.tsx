@@ -1,9 +1,7 @@
 import { Award, Globe, Users, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 bg-card/30">
+  return <section id="about" className="py-20 bg-card/30">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
           {/* Left: Image */}
@@ -25,7 +23,9 @@ const About = () => {
               <div className="text-xl font-bold text-profit">#67</div>
               <div className="text-xs text-muted-foreground">FTX Rank</div>
             </div>
-            <div className="absolute -bottom-4 -left-4 glass-card p-4 rounded-xl animate-float" style={{ animationDelay: '1s' }}>
+            <div className="absolute -bottom-4 -left-4 glass-card p-4 rounded-xl animate-float" style={{
+            animationDelay: '1s'
+          }}>
               <div className="text-xl font-bold text-gold">+48,193%</div>
               <div className="text-xs text-muted-foreground">Personal Return</div>
             </div>
@@ -38,7 +38,8 @@ const About = () => {
                 Meet <span className="text-gradient">Laminar Trading</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                <strong className="text-gold">Enio J</strong> is a top-tier quantitative trader ranked #67 on the FTX leaderboard in 2022, with +48,193% return on personal capital since 2020. <strong className="text-gold">Jordan Fleming</strong> is a results-driven executive with global expertise across Dubai, London, Sydney, and more, bringing operational excellence and strategic growth to high-stakes environments.
+                <strong className="text-gold">
+Jordan Fleming</strong> is a top-tier quantitative trader ranked #67 on the FTX leaderboard in 2022, with +48,193% return on personal capital since 2020. <strong className="text-gold">Jordan Fleming</strong> is a results-driven executive with global expertise across Dubai, London, Sydney, and more, bringing operational excellence and strategic growth to high-stakes environments.
               </p>
             </div>
 
@@ -66,25 +67,16 @@ const About = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-gold text-navy hover:bg-gold-light pulse-gold"
-              >
+              <Button size="lg" className="bg-gold text-navy hover:bg-gold-light pulse-gold">
                 Schedule Consultation
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-gold text-gold hover:bg-gold/10"
-              >
+              <Button variant="outline" size="lg" className="border-gold text-gold hover:bg-gold/10">
                 View Performance
               </Button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
