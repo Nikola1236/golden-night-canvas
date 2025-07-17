@@ -57,7 +57,8 @@ const handler = async (req: Request): Promise<Response> => {
 
     if (dbError) {
       console.error('Database error:', dbError);
-      throw new Error('Failed to save to database');
+      console.error('Full database error details:', JSON.stringify(dbError, null, 2));
+      throw new Error(`Failed to save to database: ${dbError.message || 'Unknown error'}`);
     }
 
     // Send to Discord
