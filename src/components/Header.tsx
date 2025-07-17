@@ -43,7 +43,10 @@ const Header = () => {
           {/* Theme Toggle & CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
-            <Button className="bg-gold text-navy hover:bg-gold-light pulse-gold">
+            <Button 
+              className="bg-gold text-navy hover:bg-gold-light pulse-gold"
+              onClick={() => window.open('https://whop.com/laminar-trading/', '_blank')}
+            >
               Get Started
             </Button>
           </div>
@@ -98,7 +101,10 @@ const Header = () => {
               </a>
               <div className="flex items-center justify-between mt-4">
                 <ThemeToggle />
-                <Button className="bg-gold text-navy hover:bg-gold-light flex-1 ml-4">
+                <Button 
+                  className="bg-gold text-navy hover:bg-gold-light flex-1 ml-4"
+                  onClick={() => window.open('https://whop.com/laminar-trading/', '_blank')}
+                >
                   Get Started
                 </Button>
               </div>

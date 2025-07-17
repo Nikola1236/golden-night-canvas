@@ -69,6 +69,7 @@ const Hero = () => {
             <Button
               size="lg"
               className="bg-gold text-navy hover:bg-gold-light text-lg px-8 py-4 pulse-gold"
+              onClick={() => window.open('https://whop.com/laminar-trading/', '_blank')}
             >
               Access Course
               <ArrowRight className="ml-2 h-5 w-5" />

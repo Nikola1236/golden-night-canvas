@@ -81,7 +81,12 @@ const MeetScytheSection = () => {
             </div>
             
             <div className="flex gap-4 animate-scale-in" style={{ animationDelay: '1s' }}>
-              <Button variant="default" size="lg" className="hover-lift relative overflow-hidden group">
+              <Button 
+                variant="default" 
+                size="lg" 
+                className="hover-lift relative overflow-hidden group"
+                onClick={() => window.open('https://whop.com/laminar-trading/', '_blank')}
+              >
                 <span className="relative z-10">Schedule Consultation</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Button>
