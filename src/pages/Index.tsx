@@ -1,25 +1,27 @@
 import Header from "@/components/Header";
-import TradingHeroSection from "@/components/TradingHeroSection";
-import MeetScytheSection from "@/components/MeetScytheSection";
-import TradingStrategiesSection from "@/components/TradingStrategiesSection";
-import PerformanceSection from "@/components/PerformanceSection";
-import TradingTestimonialsSection from "@/components/TradingTestimonialsSection";
-import FAQSection from "@/components/FAQSection";
-import ContactSection from "@/components/ContactSection";
-import TradingFooter from "@/components/TradingFooter";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import TradingStrategies from "@/components/TradingStrategies";
+import Performance from "@/components/Performance";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Header />
-      <TradingHeroSection />
-      <MeetScytheSection />
-      <TradingStrategiesSection />
-      <PerformanceSection />
-      <TradingTestimonialsSection />
-      <FAQSection />
-      <ContactSection />
-      <TradingFooter />
+      <Hero />
+      <About />
+      <TradingStrategies />
+      <Performance />
+      <Testimonials />
+      <FAQ />
+      <Contact />
+      <Footer />
+      <Toaster />
     </div>
   );
 };
