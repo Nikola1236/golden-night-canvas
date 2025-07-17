@@ -33,7 +33,7 @@ const About = () => {
             animationDelay: '2s'
           }}>
               <div className="text-xl font-bold text-primary">Dubai</div>
-              <div className="text-xs text-muted-foreground">Global Operations</div>
+              <div className="text-xs text-gold">Global Operations</div>
             </div>
             <div className="absolute bottom-1/4 -right-8 glass-card p-4 rounded-xl animate-float" style={{
             animationDelay: '3s'
