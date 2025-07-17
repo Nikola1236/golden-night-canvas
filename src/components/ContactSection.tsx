@@ -14,7 +14,6 @@ const ContactSection = () => {
     fullName: '',
     email: '',
     phone: '',
-    subject: '',
     message: ''
   });
 
@@ -26,12 +25,6 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSelectChange = (value: string) => {
-    setFormData(prev => ({
-      ...prev,
-      subject: value
-    }));
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -56,7 +49,6 @@ const ContactSection = () => {
           fullName: formData.fullName,
           email: formData.email,
           phone: formData.phone,
-          subject: formData.subject,
           message: formData.message
         }
       });
@@ -75,7 +67,6 @@ const ContactSection = () => {
         fullName: '',
         email: '',
         phone: '',
-        subject: '',
         message: ''
       });
 
@@ -112,13 +103,13 @@ const ContactSection = () => {
             
             <div className="space-y-6">
               {[
-                { icon: Mail, label: 'Email', value: 'contact@scythecapital.com', color: 'bg-blue-500/20', iconColor: 'text-blue-500' },
-                { icon: Phone, label: 'Phone', value: '+971 4 123 4567', color: 'bg-green-500/20', iconColor: 'text-green-500' },
-                { icon: MapPin, label: 'Headquarters', value: 'Dubai, UAE', color: 'bg-primary/20', iconColor: 'text-primary' }
+                { icon: Mail, label: 'Email', value: 'contact@tradingcourse.com', color: 'bg-gold/10 border border-gold/20', iconColor: 'text-gold' },
+                { icon: Phone, label: 'Discord', value: 'discord.gg/tradingcourse', color: 'bg-gold/10 border border-gold/20', iconColor: 'text-gold' },
+                { icon: MapPin, label: 'Telegram', value: '@tradingcourse', color: 'bg-gold/10 border border-gold/20', iconColor: 'text-gold' }
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-4 group hover-lift animate-slide-up" style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
-                  <div className={`w-12 h-12 ${item.color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 glass-effect`}>
-                    <item.icon className={`w-6 h-6 ${item.iconColor}`} />
+                  <div className={`p-3 rounded-lg ${item.color}`}>
+                    <item.icon className={`h-6 w-6 ${item.iconColor}`} />
                   </div>
                   <div>
                     <div className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">{item.label}</div>
@@ -126,13 +117,6 @@ const ContactSection = () => {
                   </div>
                 </div>
               ))}
-            </div>
-            
-            <div className="glass-effect rounded-2xl p-6 gradient-border hover-lift animate-scale-in" style={{ animationDelay: '0.7s' }}>
-              <h4 className="font-semibold text-card-foreground mb-3 text-gradient">Free Consultation</h4>
-              <p className="text-card-foreground/70 text-sm leading-relaxed">
-                Book a free 30-minute strategic call with one of our experts to evaluate your trading profile and define the most suitable strategy.
-              </p>
             </div>
           </div>
           
@@ -161,24 +145,6 @@ const ContactSection = () => {
               ))}
               
               <div className="group animate-slide-up" style={{ animationDelay: '0.9s' }}>
-                <label className="block text-sm font-medium text-card-foreground mb-2 group-focus-within:text-primary transition-colors duration-300">
-                  Subject
-                </label>
-                <Select value={formData.subject} onValueChange={handleSelectChange}>
-                  <SelectTrigger className="glass-effect border-primary/20 focus:border-primary hover:border-primary/40 transition-all duration-300">
-                    <SelectValue placeholder="Select a subject" />
-                  </SelectTrigger>
-                  <SelectContent className="glass-effect border border-primary/20">
-                    {['General Information', 'Strategy Demo', 'Investment Consultation', 'Technical Support', 'Partnership'].map(option => (
-                      <SelectItem key={option} value={option} className="hover:bg-primary/10">
-                        {option}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-              
-              <div className="group animate-slide-up" style={{ animationDelay: '1s' }}>
                 <label className="block text-sm font-medium text-card-foreground mb-2 group-focus-within:text-primary transition-colors duration-300">
                   Message *
                 </label>

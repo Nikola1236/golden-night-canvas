@@ -10,7 +10,6 @@ interface ContactFormData {
   fullName: string;
   email: string;
   phone?: string;
-  subject?: string;
   message: string;
 }
 
@@ -28,7 +27,7 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { fullName, email, phone, subject, message }: ContactFormData = await req.json();
+    const { fullName, email, phone, message }: ContactFormData = await req.json();
 
     // Validate required fields
     if (!fullName || !email || !message) {
@@ -53,7 +52,7 @@ const handler = async (req: Request): Promise<Response> => {
         full_name: fullName,
         email: email,
         phone: phone || null,
-        subject: subject || null,
+        subject: null,
         message: message
       }]);
 
@@ -67,11 +66,11 @@ const handler = async (req: Request): Promise<Response> => {
     
     if (discordWebhookUrl) {
       const embed = {
-        title: "📩 Nuovo Messaggio di Contatto",
+        title: "📩 New Contact Message",
         color: 0x0099ff,
         fields: [
           {
-            name: "👤 Nome",
+            name: "👤 Name",
             value: fullName,
             inline: true
           },
@@ -86,28 +85,20 @@ const handler = async (req: Request): Promise<Response> => {
 
       if (phone) {
         embed.fields.push({
-          name: "📱 Telefono",
+          name: "📱 Phone",
           value: phone,
           inline: true
         });
       }
 
-      if (subject) {
-        embed.fields.push({
-          name: "🏷️ Oggetto",
-          value: subject,
-          inline: false
-        });
-      }
-
       embed.fields.push({
-        name: "💬 Messaggio",
+        name: "💬 Message",
         value: message.length > 1024 ? message.substring(0, 1021) + "..." : message,
         inline: false
       });
 
       const discordPayload = {
-        content: "🔔 **Nuovo contatto ricevuto!**",
+        content: "🔔 **New contact received!**",
         embeds: [embed]
       };
 
