@@ -32,12 +32,16 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-gradient glow-text">Turn Your Trading</span>
-            <br />
-            <span className="text-foreground">Into a 7-Figures Machine</span>
-            <br />
-            <span className="text-gradient">Learn What the top 1% Feels Like</span>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1] tracking-tight">
+            <span className="block text-gradient glow-text mb-2">
+              Turn Your Trading
+            </span>
+            <span className="block text-foreground mb-2">
+              Into a 7-Figure Machine
+            </span>
+            <span className="block text-gradient text-3xl md:text-5xl lg:text-6xl font-semibold">
+              Learn What the Top 1% Feels Like
+            </span>
           </h1>
 
           {/* Subheadline */}
