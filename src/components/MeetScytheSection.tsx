@@ -10,7 +10,7 @@ const MeetScytheSection = () => {
           <div className="relative">
             <div className="glass-effect rounded-3xl p-8 shadow-[var(--shadow-glass)] hover-lift group border border-primary/20">
               <img
-                src="/lovable-uploads/b054cbc5-bba5-4de3-b244-c9e4b9a52ab2.png"
+                src="/lovable-uploads/f26f381a-90c7-42cf-99d9-d89ea41cc4bb.png"
                 alt="Enio J and Jordan F - Laminar Trading Team"
                 className="w-full h-auto rounded-2xl shadow-lg group-hover:scale-[1.02] transition-transform duration-300"
               />
