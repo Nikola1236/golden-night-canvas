@@ -7,7 +7,7 @@ const testimonials = [
     company: "Apex Capital",
     image: "MC",
     rating: 5,
-    text: "Scythe's risk management during the 2022 crash saved our portfolio. While others lost 60%+, we were down just single digits. Their defensive pivot was masterful."
+    text: "Laminar's risk management during the 2022 crash saved our portfolio. While others lost 60%+, we were down just single digits. Their defensive pivot was masterful."
   },
   {
     name: "Sarah Williams",
@@ -15,7 +15,7 @@ const testimonials = [
     company: "Sterling Investments",
     image: "SW",
     rating: 5,
-    text: "Jordan's multi-timeframe approach is unmatched. The delta-neutral strategies generate consistent returns regardless of market direction. Exactly what institutional trading needs."
+    text: "Enio's multi-timeframe approach is unmatched. The delta-neutral strategies generate consistent returns regardless of market direction. Exactly what institutional trading needs."
   },
   {
     name: "David Rodriguez",
@@ -23,7 +23,7 @@ const testimonials = [
     company: "Blockchain Capital",
     image: "DR",
     rating: 5,
-    text: "813% in 2021 was incredible, but the real test was 2022. Scythe's ability to preserve capital while positioning for recovery is what separates professionals from amateurs."
+    text: "813% in 2021 was incredible, but the real test was 2022. Laminar's ability to preserve capital while positioning for recovery is what separates professionals from amateurs."
   },
   {
     name: "Elena Petrov",
@@ -31,7 +31,7 @@ const testimonials = [
     company: "Quantum Trading",
     image: "EP",
     rating: 5,
-    text: "The mathematical precision behind Scythe's strategies is impressive. No emotion, just data-driven decisions that consistently exploit market inefficiencies."
+    text: "The mathematical precision behind Laminar's strategies is impressive. No emotion, just data-driven decisions that consistently exploit market inefficiencies."
   }
 ];
 
