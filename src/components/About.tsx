@@ -9,7 +9,7 @@ const About = () => {
             <div className="glass-card p-8 rounded-2xl">
               <div className="aspect-square rounded-xl overflow-hidden">
                 <img 
-                  src="/lovable-uploads/e0155dab-f487-4f23-8eb3-3ade80de9af4.png" 
+                  src="/lovable-uploads/f26f381a-90c7-42cf-99d9-d89ea41cc4bb.png" 
                   alt="Enio J and Jordan F" 
                   className="w-full h-full object-cover"
                 />
