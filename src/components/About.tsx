@@ -10,7 +10,7 @@ const About = () => {
               <div className="aspect-square rounded-xl overflow-hidden">
                 <img 
                   src="/lovable-uploads/f26f381a-90c7-42cf-99d9-d89ea41cc4bb.png" 
-                  alt="Enio J and Jordan F" 
+                  alt="Enio J" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -28,18 +28,18 @@ const About = () => {
               <div className="text-xs text-muted-foreground">Personal Return</div>
             </div>
             
-            {/* Floating Stats - Jordan F */}
+            {/* Additional Stats */}
             <div className="absolute top-1/4 -left-8 glass-card p-4 rounded-xl animate-float" style={{
             animationDelay: '2s'
           }}>
-              <div className="text-xl font-bold text-primary">Dubai</div>
-              <div className="text-xs text-gold">Global Operations</div>
+              <div className="text-xl font-bold text-primary">Global</div>
+              <div className="text-xs text-gold">Market Reach</div>
             </div>
             <div className="absolute bottom-1/4 -right-8 glass-card p-4 rounded-xl animate-float" style={{
             animationDelay: '3s'
           }}>
-              <div className="text-xl font-bold text-gold">Executive</div>
-              <div className="text-xs text-muted-foreground">Strategic Growth</div>
+              <div className="text-xl font-bold text-gold">Premium</div>
+              <div className="text-xs text-muted-foreground">Trading Tech</div>
             </div>
           </div>
 
@@ -50,8 +50,7 @@ const About = () => {
                 Meet <span className="text-gradient">Laminar Trading</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                <strong className="text-gold">Enio J</strong> is a top-tier quantitative trader ranked #67 on the FTX leaderboard in 2022, with +48,193% return on personal capital since 2020. <br /><br />
-                <strong className="text-gold">Jordan F</strong> is a results-driven executive with global expertise across Dubai, London, Sydney, and more, bringing operational excellence and strategic growth to high-stakes environments.
+                <strong className="text-gold">Enio J</strong> is a top-tier quantitative trader ranked #67 on the FTX leaderboard in 2022, with +48,193% return on personal capital since 2020. With deep specialization in crypto derivatives, market structure, and execution systems, Enio brings unmatched expertise and strategic vision to high-stakes trading environments.
               </p>
             </div>
 
@@ -71,7 +70,7 @@ const About = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-gold">Our Edge</h3>
               <p className="text-muted-foreground">
-                What sets Laminar Trading apart is our <strong>adaptive trading framework</strong> with deep specialization in crypto derivatives, market structure, and execution systems. Enio's leadership and strategy form the foundation of our edge, while Jordan's operational excellence optimizes business processes in fast-paced environments.
+                What sets Laminar Trading apart is our <strong>adaptive trading framework</strong> with deep specialization in crypto derivatives, market structure, and execution systems. Enio's leadership and strategy form the foundation of our edge, delivering consistent results in fast-paced trading environments.
               </p>
               <p className="text-muted-foreground">
                 Our proprietary low-latency trading terminal and priority access to premium exchange data feeds provide institutional-level advantages that translate directly into superior performance.

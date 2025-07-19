@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "Who are the key team members and what is their track record?",
-    answer: "Founder/Trader: Enio J is a top-tier quantitative trader with a performance track record few in the industry can match. Ranked #67 on the FTX leaderboard in 2022, delivered +48,193% return on personal capital since 2020, with deep specialization in crypto derivatives, market structure, and execution. His leadership and strategy form the foundation of Laminar Capital's edge. COO: Jordan F (TBA)."
+    answer: "Founder/Trader: Enio J is a top-tier quantitative trader with a performance track record few in the industry can match. Ranked #67 on the FTX leaderboard in 2022, delivered +48,193% return on personal capital since 2020, with deep specialization in crypto derivatives, market structure, and execution. His leadership and strategy form the foundation of Laminar Capital's edge."
   },
   {
     question: "What are the terms and fees?",

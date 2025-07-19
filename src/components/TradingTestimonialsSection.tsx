@@ -8,7 +8,7 @@ const TradingTestimonialsSection = () => {
       initials: "MC"
     },
     {
-      quote: "Jordan's multi-timeframe approach is unmatched. The delta-neutral strategies generate consistent returns regardless of market direction. Exactly what institutional trading needs.",
+      quote: "The multi-timeframe approach is unmatched. The delta-neutral strategies generate consistent returns regardless of market direction. Exactly what institutional trading needs.",
       name: "Sarah Williams",
       role: "Head of Trading",
       company: "Sterling Investments",

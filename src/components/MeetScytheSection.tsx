@@ -11,7 +11,7 @@ const MeetScytheSection = () => {
             <div className="glass-effect rounded-3xl p-8 shadow-[var(--shadow-glass)] hover-lift group border border-primary/20">
               <img
                 src="/lovable-uploads/f26f381a-90c7-42cf-99d9-d89ea41cc4bb.png"
-                alt="Enio J and Jordan F - Laminar Trading Team"
+                alt="Enio J - Laminar Trading Team"
                 className="w-full h-auto rounded-2xl shadow-lg group-hover:scale-[1.02] transition-transform duration-300"
               />
               <div className="mt-6 grid grid-cols-2 gap-4">
@@ -45,7 +45,7 @@ const MeetScytheSection = () => {
             </div>
             
             <p className="font-inter text-lg text-night-blue/80 leading-relaxed animate-slide-up" style={{ animationDelay: '0.4s' }}>
-              <strong className="text-primary">Enio J</strong> is a top-tier quantitative trader ranked #67 on the FTX leaderboard in 2022, with +48,193% return on personal capital since 2020. <strong className="text-primary">Jordan Fleming</strong> is a results-driven executive with global expertise across Dubai, London, Sydney, and more, bringing operational excellence and strategic growth to high-stakes environments.
+              <strong className="text-primary">Enio J</strong> is a top-tier quantitative trader ranked #67 on the FTX leaderboard in 2022, with +48,193% return on personal capital since 2020. With deep specialization in crypto derivatives, market structure, and execution systems, Enio brings unmatched expertise and strategic vision to deliver consistent results in high-stakes trading environments.
             </p>
             
             <div className="space-y-6 animate-slide-up" style={{ animationDelay: '0.6s' }}>
@@ -73,7 +73,7 @@ const MeetScytheSection = () => {
             <div className="glass-effect rounded-2xl p-6 gradient-border animate-slide-up hover-lift" style={{ animationDelay: '0.8s' }}>
               <h3 className="font-playfair text-xl font-bold text-night-blue mb-4 text-gradient">Our Edge</h3>
               <p className="text-night-blue/80 leading-relaxed mb-4">
-                What sets Scythe Capital apart is our <strong className="text-primary">adaptive trading framework</strong> with deep specialization in crypto derivatives, market structure, and execution. Enio's leadership and strategy form the foundation of our edge, while Jordan's operational excellence optimizes business processes in fast-paced environments.
+                What sets Scythe Capital apart is our <strong className="text-primary">adaptive trading framework</strong> with deep specialization in crypto derivatives, market structure, and execution. Enio's leadership and strategy form the foundation of our edge, delivering consistent results in fast-paced trading environments.
               </p>
               <p className="text-night-blue/80 leading-relaxed">
                 Our proprietary low-latency trading terminal and priority access to premium exchange data feeds provide institutional-level advantages that translate directly into superior performance.
