@@ -1,27 +1,7 @@
-import { useState } from "react";
-import { Download, Mail, FileText, CheckCircle } from "lucide-react";
+import { Download, FileText, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useToast } from "@/hooks/use-toast";
 
 const FreePDFSection = () => {
-  const [email, setEmail] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-
-    // Simulate email collection
-    toast({
-      title: "Success!",
-      description: "Check your email for the free trading guide download link.",
-    });
-    
-    setIsSubmitted(true);
-    setEmail("");
-  };
 
   return (
     <section id="free-pdf" className="py-20 bg-gradient-to-br from-gold/5 to-gold/10 relative overflow-hidden">
@@ -84,51 +64,20 @@ const FreePDFSection = () => {
             </div>
           </div>
 
-          {/* Email Form */}
-          {!isSubmitted ? (
-            <div className="glass-card p-8 rounded-2xl max-w-md mx-auto">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2 text-left">
-                    Enter your email to download *
-                  </label>
-                  <div className="relative">
-                    <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                    <Input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="your.email@example.com"
-                      required
-                      className="pl-10 bg-background/50 border-gold/20 focus:border-gold"
-                    />
-                  </div>
-                </div>
-                
-                <Button 
-                  type="button" 
-                  size="lg" 
-                  className="w-full bg-gold text-navy hover:bg-gold-light pulse-gold"
-                  onClick={() => window.open('https://whop.com/laminar-trading/', '_blank')}
-                >
-                  <Download className="mr-2 h-5 w-5" />
-                  Download Free Guide
-                </Button>
-                
-                <p className="text-xs text-muted-foreground">
-                  We respect your privacy. Unsubscribe at any time.
-                </p>
-              </form>
-            </div>
-          ) : (
-            <div className="glass-card p-8 rounded-2xl max-w-md mx-auto text-center">
-              <CheckCircle className="h-16 w-16 text-gold mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-foreground mb-2">Check Your Email!</h3>
-              <p className="text-muted-foreground">
-                We&apos;ve sent you the download link for your free trading guide.
-              </p>
-            </div>
-          )}
+          {/* CTA Button */}
+          <div className="text-center">
+            <Button 
+              size="lg" 
+              className="bg-gold text-navy hover:bg-gold-light text-lg px-8 py-4 pulse-gold shadow-lg shadow-gold/30"
+              onClick={() => window.open('https://whop.com/laminar-trading/', '_blank')}
+            >
+              <Download className="mr-2 h-5 w-5" />
+              Get Free Trading Guide
+            </Button>
+            <p className="text-sm text-muted-foreground mt-4 max-w-md mx-auto">
+              Access our comprehensive strategy guide and start learning professional trading techniques today.
+            </p>
+          </div>
         </div>
       </div>
     </section>
