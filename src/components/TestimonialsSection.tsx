@@ -2,23 +2,23 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "CEO, TechCorp",
-    content: "Working with this team was an absolute pleasure. Their attention to detail and commitment to excellence exceeded all our expectations. The results speak for themselves.",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
-  },
-  {
-    name: "Michael Chen",
-    role: "Founder, InnovateLab",
-    content: "The level of professionalism and expertise demonstrated throughout our project was remarkable. They delivered exactly what they promised, on time and within budget.",
+    name: "Lucas",
+    role: "Trader",
+    content: "It's been a few months now since I joined Enio's course, prior to that I was already trading the standard way you see online with lines and meaningless technical analysis. After going through the course and templates all provided in the group and putting in the hours I have had multiple 10,000$ plus trades that I wouldn't of been able to capitalise on without the Knowledge I gained from Enio. Always grateful for the skill set he has taught me that I will be able to use my whole life",
     rating: 5,
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
   },
   {
-    name: "Emily Rodriguez",
-    role: "Director, GrowthFirst",
-    content: "I can't recommend them highly enough. Their innovative approach and dedication to quality transformed our business. The impact has been incredible.",
+    name: "Tiago",
+    role: "Trader",
+    content: "If you fully study this course, you'll gain a real edge in the market. You'll develop a completely new approach with a solid strategy, and clear entry and exit points. Everything is explained in a straightforward, no bullshit way, no time wasted, just pure value. If you want to actually learn how to beat the market, this is for you.",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+  },
+  {
+    name: "Sandro Schulz",
+    role: "Trader",
+    content: "Tbh, Sandels videos are top top, really like the way he gets his message and the way he answered the questions",
     rating: 5,
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
   }
