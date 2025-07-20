@@ -26,8 +26,8 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Learn the quantitative strategies that delivered Sharpe Ratio 1.66 
-            and generated alpha across bull and bear markets
+            Advanced algorithmic trading strategies for professionals who
+            want consistent results in financial markets
           </p>
 
 
