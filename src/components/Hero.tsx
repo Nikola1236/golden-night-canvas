@@ -14,13 +14,13 @@ const Hero = () => {
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1] tracking-tight">
             <span className="block text-gradient glow-text mb-2 py-[15px]">
-              Master Algorithmic Trading
+              Turn Your Trading
             </span>
             <span className="block text-foreground mb-2 py-[10px]">
-              With Scientific Precision
+              Into a 7-Figure Machine
             </span>
             <span className="block text-gradient text-3xl md:text-5xl lg:text-6xl font-semibold">
-              +35,660% Returns Since 2020
+              Learn What the Top 1% Feels Like
             </span>
           </h1>
 
