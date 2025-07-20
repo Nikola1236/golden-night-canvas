@@ -2,36 +2,36 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Marcus Chen",
-    role: "Portfolio Manager",
-    company: "Apex Capital",
-    image: "MC",
+    name: "Lucas",
+    role: "Trader",
+    company: "",
+    image: "L",
     rating: 5,
-    text: "Laminar's risk management during the 2022 crash saved our portfolio. While others lost 60%+, we were down just single digits. Their defensive pivot was masterful."
+    text: "It's been a few months now since I joined Enio's course, prior to that I was already trading the standard way you see online with lines and meaningless technical analysis. After going through the course and templates all provided in the group and putting in the hours I have had multiple 10,000$ plus trades that I wouldn't of been able to capitalise on without the Knowledge I gained from Enio. Always grateful for the skill set he has taught me that I will be able to use my whole life"
   },
   {
-    name: "Sarah Williams",
-    role: "Head of Trading",
-    company: "Sterling Investments",
-    image: "SW",
+    name: "Tiago",
+    role: "Trader",
+    company: "",
+    image: "T",
     rating: 5,
-    text: "Enio's multi-timeframe approach is unmatched. The delta-neutral strategies generate consistent returns regardless of market direction. Exactly what institutional trading needs."
+    text: "If you fully study this course, you'll gain a real edge in the market. You'll develop a completely new approach with a solid strategy, and clear entry and exit points. Everything is explained in a straightforward, no bullshit way, no time wasted, just pure value. If you want to actually learn how to beat the market, this is for you."
   },
   {
-    name: "David Rodriguez",
-    role: "Crypto Fund Manager",
-    company: "Blockchain Capital",
-    image: "DR",
+    name: "Marin",
+    role: "Trader",
+    company: "",
+    image: "M",
     rating: 5,
-    text: "813% in 2021 was incredible, but the real test was 2022. Laminar's ability to preserve capital while positioning for recovery is what separates professionals from amateurs."
+    text: "I joined Laminar in mid January, and from the second I joined I could just see that this was the best move I have made in my trading career. Starting from daily, weekly, monthly analysis, actual educational posts about anything trading related, a mentor who possesses knowledge like nobody I have seen or worked with before. On top of all that, this is a mentor who actually participates in general chat, whether it be joking around or actually answering communitys questions. He provides insider information which I'm 100% sure I would have not found in any other community, this is not just pattern recognition like most traders do it - it's an actual understanding of market behaviour and dynamics which I was lucky enough to have him teach me in a pretty short time despites is complexity. The course itself is structured in such a digestible way which makes you understand it on the first watch. The orderflow aspect of this course is itself worth buying it, footprint charts have transformed my trading beyond only crypto - it has deepened my understanding and has shown me what real trading is supposed to look like. Simply the idea of your mentor being one of the best traders in the world, that works with unfathomable amounts of capital is enough of an indication to how much knowledge you can absorb. Other than that, the community is full of self driven, high status individuals who are super supportive and have the same goal as all of us - to make most of life and enjoy it in financial freedom. My message to anyone who is even 1% interested in joining this community is - if you respect your time and want to experience the best version of yourself whether it's in the trading sense or general sense, there isn't a community close to this one - so do what you want with that information."
   },
   {
-    name: "Elena Petrov",
-    role: "Quantitative Analyst",
-    company: "Quantum Trading",
-    image: "EP",
+    name: "Sandro Schulz",
+    role: "Trader",
+    company: "",
+    image: "SS",
     rating: 5,
-    text: "The mathematical precision behind Laminar's strategies is impressive. No emotion, just data-driven decisions that consistently exploit market inefficiencies."
+    text: "Tbh, Sandels videos are top top, really like the way he gets his message and the way he answered the questions"
   }
 ];
 
