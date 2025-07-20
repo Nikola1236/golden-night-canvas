@@ -1,4 +1,4 @@
-import { Mail, ShoppingCart } from "lucide-react";
+import { Mail, MessageCircle, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
@@ -29,25 +29,21 @@ const ContactSection = () => {
                   label: 'Email', 
                   value: 'support@laminar.trading', 
                   description: 'General inquiries',
-                  action: () => window.open('mailto:support@laminar.trading', '_blank'),
-                  isImage: false
+                  action: () => window.open('mailto:support@laminar.trading', '_blank')
                 },
                 { 
-                  icon: null, 
+                  icon: MessageCircle, 
                   label: 'Discord', 
                   value: 'Join our community', 
                   description: 'Live chat & support',
-                  action: () => window.open('https://discord.gg/v5PVKSHx6N', '_blank'),
-                  isImage: true,
-                  imageSrc: '/lovable-uploads/c0ccbb02-91bd-4195-b2b7-c9bbcc447094.png'
+                  action: () => window.open('https://discord.gg/v5PVKSHx6N', '_blank')
                 },
                 { 
                   icon: ShoppingCart, 
                   label: 'Whop', 
                   value: 'Access Course', 
                   description: 'Start learning today',
-                  action: () => window.open('https://whop.com/laminar-trading/', '_blank'),
-                  isImage: false
+                  action: () => window.open('https://whop.com/laminar-trading/', '_blank')
                 }
               ].map((item, index) => (
                 <div 
@@ -57,11 +53,7 @@ const ContactSection = () => {
                   onClick={item.action}
                 >
                   <div className="bg-gold/10 border border-gold/20 p-6 rounded-xl mb-4 group-hover:bg-gold/20 transition-colors">
-                    {item.isImage ? (
-                      <img src={item.imageSrc} alt={item.label} className="h-8 w-8 mx-auto" />
-                    ) : (
-                      <item.icon className="h-8 w-8 text-gold mx-auto" />
-                    )}
+                    <item.icon className="h-8 w-8 text-gold mx-auto" />
                   </div>
                   <h4 className="font-semibold text-foreground text-lg mb-2 group-hover:text-gold transition-colors">{item.label}</h4>
                   <p className="text-gold font-medium mb-1">{item.value}</p>
@@ -76,7 +68,7 @@ const ContactSection = () => {
                 className="bg-gold text-navy hover:bg-gold-light text-lg px-8 py-4 pulse-gold shadow-lg shadow-gold/30"
                 onClick={() => window.open('https://discord.gg/v5PVKSHx6N', '_blank')}
               >
-                <img src="/lovable-uploads/c0ccbb02-91bd-4195-b2b7-c9bbcc447094.png" alt="Discord" className="mr-2 h-5 w-5" />
+                <MessageCircle className="mr-2 h-5 w-5" />
                 Join Discord Community
               </Button>
               <p className="text-sm text-muted-foreground mt-4">
