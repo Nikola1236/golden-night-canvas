@@ -93,28 +93,6 @@ const TradingStrategies = () => {
           })}
         </div>
 
-        {/* Performance Section */}
-        <div className="mt-20 glass-card p-8 rounded-2xl text-center">
-          <h3 className="text-2xl font-bold text-gradient mb-6">Real-Time Performance</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div>
-              <div className="text-2xl font-bold text-profit mb-1">+12.7%</div>
-              <div className="text-xs text-muted-foreground">Today</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-profit mb-1">+84.3%</div>
-              <div className="text-xs text-muted-foreground">This Month</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-gold mb-1">94.2%</div>
-              <div className="text-xs text-muted-foreground">Accuracy</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-foreground mb-1">1,247</div>
-              <div className="text-xs text-muted-foreground">Trades Today</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
