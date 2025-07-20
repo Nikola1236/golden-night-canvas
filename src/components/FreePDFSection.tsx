@@ -24,7 +24,7 @@ const FreePDFSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gold/5 to-gold/10 relative overflow-hidden">
+    <section id="free-pdf" className="py-20 bg-gradient-to-br from-gold/5 to-gold/10 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-gold/10 via-transparent to-transparent"></div>
