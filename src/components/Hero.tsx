@@ -50,21 +50,6 @@ const Hero = () => {
             want consistent results in financial markets
           </p>
 
-          {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="glass-card p-6 rounded-xl trading-card">
-              <div className="text-3xl font-bold text-profit mb-2">+163%</div>
-              <div className="text-sm text-muted-foreground">2023 Return</div>
-            </div>
-            <div className="glass-card p-6 rounded-xl trading-card">
-              <div className="text-3xl font-bold text-gold mb-2">-6.8%</div>
-              <div className="text-sm text-muted-foreground">2022 Drawdown</div>
-            </div>
-            <div className="glass-card p-6 rounded-xl trading-card">
-              <div className="text-3xl font-bold text-foreground mb-2">$50M+</div>
-              <div className="text-sm text-muted-foreground">AUM</div>
-            </div>
-          </div>
 
           {/* CTA Button */}
           <div className="flex justify-center">
