@@ -8,7 +8,7 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-6 text-gradient">
-            Join Our Community
+            Let's Discuss Your Future
           </h2>
           <p className="font-inter text-xl text-foreground/70 max-w-3xl mx-auto">
             Connect with professional traders and get instant support from our expert team.
