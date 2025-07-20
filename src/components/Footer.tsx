@@ -1,4 +1,4 @@
-import { TrendingUp, MessageSquare, Mail } from "lucide-react";
+import { TrendingUp, MessageCircle, Mail, ShoppingCart } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -47,17 +47,17 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-foreground mb-4">Connect</h3>
             <div className="space-y-3">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 cursor-pointer hover:text-gold transition-colors" onClick={() => window.open('mailto:support@laminar.trading', '_blank')}>
                 <Mail className="h-4 w-4 text-gold" />
-                <span className="text-muted-foreground text-sm">contact@tradingcourse.com</span>
+                <span className="text-muted-foreground text-sm">support@laminar.trading</span>
               </div>
-              <div className="flex items-center gap-2">
-                <MessageSquare className="h-4 w-4 text-gold" />
+              <div className="flex items-center gap-2 cursor-pointer hover:text-gold transition-colors" onClick={() => window.open('https://discord.gg/v5PVKSHx6N', '_blank')}>
+                <MessageCircle className="h-4 w-4 text-gold" />
                 <span className="text-muted-foreground text-sm">Discord Community</span>
               </div>
-              <div className="flex items-center gap-2">
-                <MessageSquare className="h-4 w-4 text-gold" />
-                <span className="text-muted-foreground text-sm">Telegram Support</span>
+              <div className="flex items-center gap-2 cursor-pointer hover:text-gold transition-colors" onClick={() => window.open('https://whop.com/laminar-trading/', '_blank')}>
+                <ShoppingCart className="h-4 w-4 text-gold" />
+                <span className="text-muted-foreground text-sm">Access Course</span>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ const Footer = () => {
           
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-sm">
-              © 2024 Laminar Trading. All rights reserved.
+              © 2025 Laminar Trading. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <a href="#" className="text-muted-foreground hover:text-gold transition-colors text-sm">
