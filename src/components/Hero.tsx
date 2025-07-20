@@ -8,26 +8,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background/90"></div>
       </div>
 
-      {/* Floating Elements */}
-      <div className="absolute top-1/4 left-10 animate-float">
-        <div className="glass-card p-4 rounded-xl">
-          <BarChart3 className="h-8 w-8 text-profit" />
-        </div>
-      </div>
-      <div className="absolute top-1/3 right-10 animate-float" style={{
-      animationDelay: '1s'
-    }}>
-        <div className="glass-card p-4 rounded-xl">
-          <TrendingUp className="h-8 w-8 text-gold" />
-        </div>
-      </div>
-      <div className="absolute bottom-1/4 left-1/4 animate-float" style={{
-      animationDelay: '2s'
-    }}>
-        <div className="glass-card p-4 rounded-xl">
-          <Zap className="h-8 w-8 text-loss" />
-        </div>
-      </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
