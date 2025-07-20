@@ -14,28 +14,31 @@ const Hero = () => {
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1] tracking-tight">
             <span className="block text-gradient glow-text mb-2 py-[15px]">
-              Turn Your Trading
+              Master Algorithmic Trading
             </span>
             <span className="block text-foreground mb-2 py-[10px]">
-              Into a 7-Figure Machine
+              With Scientific Precision
             </span>
             <span className="block text-gradient text-3xl md:text-5xl lg:text-6xl font-semibold">
-              Learn What the Top 1% Feels Like
+              +35,660% Returns Since 2020
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Advanced algorithmic trading strategies for professionals who
-            want consistent results in financial markets
+            Learn the quantitative strategies that delivered Sharpe Ratio 1.66 
+            and generated alpha across bull and bear markets
           </p>
 
 
-          {/* CTA Button */}
-          <div className="flex justify-center">
-            <Button size="lg" className="bg-gold text-navy hover:bg-gold-light text-lg px-8 py-4 pulse-gold" onClick={() => window.open('https://whop.com/laminar-trading/', '_blank')}>
-              Access Course
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button size="lg" className="bg-gold text-navy hover:bg-gold-light text-lg px-8 py-4 pulse-gold shadow-lg shadow-gold/30" onClick={() => window.open('https://whop.com/laminar-trading/', '_blank')}>
+              Start Learning Now
               <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            <Button size="lg" variant="outline" className="border-gold/30 text-gold hover:bg-gold/10 text-lg px-8 py-4" onClick={() => document.getElementById('free-pdf')?.scrollIntoView({ behavior: 'smooth' })}>
+              Get Free Strategy Guide
             </Button>
           </div>
 

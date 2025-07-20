@@ -7,20 +7,28 @@ import {
 
 const faqs = [
   {
-    question: "What is the investment strategy and edge?",
-    answer: "Laminar's edge lies in a diverse, adaptive trading framework: Intraday Trading exploits short-term price movements for frequent, nimble gains. Swing Trading captures medium-term trends over several days or weeks. Options Trading adds convexity to the portfolio through volatility-driven setups and strategic hedging. Delta-Neutral Strategies are designed to reduce directional exposure and monetize market inefficiencies using a mix of spot, futures, and options. This multi-layered strategy stack allows Laminar to generate returns in both bullish and bearish markets. Our operational advantage comes from a proprietary low-latency trading terminal built for advanced discretionary trading, priority access to premium exchange data feeds not available to most market participants, and five years of refinement in order flow analytics and derivatives modeling, enabling smarter trade positioning and superior edge retention."
+    question: "What makes Laminar Trading different from other courses?",
+    answer: "Laminar teaches real algorithmic strategies used by professional fund managers. Our approach combines quantitative analysis, order flow understanding, and risk management techniques that delivered +35,660% returns since 2020. You'll learn the same systematic frameworks used by institutional traders, not just basic technical analysis."
   },
   {
-    question: "What are the fund's historical performance and risk metrics?",
-    answer: "Since inception, Laminar Capital has delivered a cumulative return of +35,660.7%, compared to +1,337.5% for Bitcoin over the same period. Annual returns: 2020: +230%, 2021: +813%, 2022: -6.8% (managed losses during market-wide collapse), 2023: +163%, 2024: +124%, 2025 YTD: +155%. Key fund metrics (2020–2025 YTD): Sharpe Ratio: 1.66 (superior to industry standard of 1.0), Sortino Ratio: 8.82 (exceptional downside protection), Calmar Ratio: 2.03 (excellent vs drawdown), Alpha: 2.66 (significant alpha vs BTC), Beta: 0.37 (low correlation to BTC volatility). Past performance doesn't guarantee future returns."
+    question: "What strategies will I learn in the course?",
+    answer: "The course covers our complete trading framework: Intraday algorithmic strategies for short-term gains, Swing trading with quantitative edge detection, Options strategies for volatility monetization, Delta-neutral approaches for market-neutral profits, Order flow analysis using proprietary tools, and Advanced risk management with position sizing algorithms. Each strategy is backed by real performance data and includes detailed implementation guides."
   },
   {
-    question: "Who are the key team members and what is their track record?",
-    answer: "Founder/Trader: Enio J is a top-tier quantitative trader with a performance track record few in the industry can match. Ranked #67 on the FTX leaderboard in 2022, delivered +48,193% return on personal capital since 2020, with deep specialization in crypto derivatives, market structure, and execution. His leadership and strategy form the foundation of Laminar Capital's edge."
+    question: "What results can I expect and how long does it take?",
+    answer: "Results depend on your dedication and capital. Our systematic approach has delivered a Sharpe Ratio of 1.66 and maintained profitability across different market conditions. Students typically see improvement in trade quality within 2-3 months of consistent application. The complete course can be completed in 4-6 weeks, but mastery requires ongoing practice and refinement."
   },
   {
-    question: "What are the terms and fees?",
-    answer: "Minimum investment: $100,000 (crypto accepted). Fees: 2% management + 20% performance. Liquidity: Quarterly withdrawals, 1-year lock-up. Current AUM: $68 million and growing. Investor access: By invitation, via Telegram @enio10k. Laminar maintains a selective capital base to ensure strategic alignment with long-term goals."
+    question: "Do I need previous trading experience?",
+    answer: "While basic market knowledge helps, the course is designed to take you from fundamentals to advanced strategies. We cover market structure, order types, and platform usage before diving into algorithmic approaches. Complete beginners should expect to spend extra time on foundational concepts, while experienced traders can focus on the advanced systematic frameworks."
+  },
+  {
+    question: "What tools and capital do I need to start?",
+    answer: "You'll need access to a trading platform (we provide recommendations), basic charting software, and starting capital appropriate for your risk tolerance. The strategies can be scaled from small accounts to larger portfolios. We recommend starting with at least $5,000 to properly implement risk management, though paper trading is encouraged initially."
+  },
+  {
+    question: "Is there ongoing support after the course?",
+    answer: "Yes, course access includes entry to our exclusive community where students share insights, ask questions, and receive ongoing guidance. You'll also get updates to strategies and access to new content as markets evolve. The community aspect is crucial for long-term success and continuous learning."
   }
 ];
 
